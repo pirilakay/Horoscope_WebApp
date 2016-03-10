@@ -1,0 +1,176 @@
+
+#Discover {
+	/* Rectangle 1: */
+	/*background: #D0021B;*/
+  border: 2px solid #D0021B;
+	border-radius: 2px;
+  border-width: thin;
+  height: 41px;
+  width: 137px;
+	text-align: center;
+	text-decoration: none;
+	/* View my work: */
+/*	font-family: helvetica;*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 20px;
+	position: relative;
+	text-align: justify-all;
+	color: #D0021B;
+	line-height: 40px;
+	text-decoration: none;
+
+}
+
+#greeting {
+    background-image: url("file:///Users/pirilakay/Desktop/L&S/Welcome/Home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background {
+  background: rgba(215,215,215,0.55);
+  /*border: 1px solid #979797;*/
+}
+.rectangle {
+  border: 3px solid #D0021B;
+}
+
+.text{
+color: #989393;
+text-decoration: none;
+/*padding: 15px 25px;*/
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+text-transform: uppercase;
+font-size: 14px;
+position: relative;
+text-align: justify-all;
+padding-left: 320px;
+padding-right: 320px;
+}
+
+.logo{
+height: 67px;
+width: 67px;
+display: block;
+margin: 0 auto;
+
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+#cssmenu {
+  background: #e8e8e8;
+  width: auto;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+  font-size: 0;
+}
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+  font-size: 0;
+}
+#cssmenu ul li a {
+  color: #989393;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+
+}
+#cssmenu ul li a:hover {
+  color: #333333;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #989393;
+  opacity: .5;
+}
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #333333;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ffffff;
+  }
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+  }
