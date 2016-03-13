@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="Style_Horoscope.css" />
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 <style class="background">
 
 </style>
@@ -29,6 +30,39 @@
 
     </header>
 
+    <div class="text spaces">
+      <form>
+        Choose your sign
+        <select id="sign">
+          <option selected value="" disabled>...</option>
+          <option value="Aries">Aries</option>
+          <option value="Taurus">Taurus</option>
+          <option value="Gemini">Gemini</option>
+          <option value="Cancer">Cancer</option>
+          <option value="Leo">Leo</option>
+          <option value="Virgo">Virgo</option>
+          <option value="Libra">Libra</option>
+          <option value="Scorpio">Scorpio</option>
+          <option value="Sagittarius">Sagittarius</option>
+          <option value="Capricorn">Capricorn</option>
+          <option value="Aquarius">Aquarius</option>
+          <option value="Pisces">Pisces</option>
+        </select>
+      </form>
+    </div>
+    <div class="results text spaces">
+
+    </div>
+    <script>
+      $(document).ready(function(){
+        $('#sign').on('change',function(e){
+          var sign = $(this).val();
+          $.ajax('http://horoscopes-api.herokuapp.com/horoscope/today/'+sign).done(function(data){
+            $('.results').html(data.horoscope);
+          })
+        })
+      });
+    </script>
 
     <footer>
 
