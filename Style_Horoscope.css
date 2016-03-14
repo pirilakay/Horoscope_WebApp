@@ -24,7 +24,7 @@
 }
 
 #greeting {
-    background-image: url("file:///Users/pirilakay/Desktop/L&S/Welcome/Home.png");
+    background-image: url("Home.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -48,6 +48,10 @@ position: relative;
 text-align: justify-all;
 padding-left: 320px;
 padding-right: 320px;
+}
+
+.spaces {
+  margin: 20px;
 }
 
 .logo{
